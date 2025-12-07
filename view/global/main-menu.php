@@ -5,11 +5,11 @@
 <?php
 // Slovenski menu elementi
 $menu_items = [    
-    'porocanje' => [
+    'naloge' => [
         'type' => 'dropdown',
-        'text' => 'Poročanje',
+        'text' => 'Naloge',
         'items' => [            
-            'porocanje' => ['text' => 'Poročanje', 'url' => '/porocanje'],            
+            'naloga1' => ['text' => 'Eksperiment 67-A', 'url' => '/naloga1'],                        
         ]
     ],
     'odjava' => [
@@ -24,7 +24,7 @@ $menu_items = [
 $role_permissions = [
     // Admin
     20 => [
-        'porocanje',        
+        'naloge',       
         'odjava',
     ],
 

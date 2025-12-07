@@ -1,28 +1,24 @@
 $(document).ready(function(){
 	// Mobile menu hide/show
-	var burger = 0;
-	$("#burgermenu").on('click touch', function () {
-		if(burger%2==0){
-			$("#burgermenu").attr("src","/media/img/menu-2.png");
-			$("#leftmenu").animate({left: '5px'});
-		}else{
-			$("#burgermenu").attr("src","/media/img/menu-1.png");
-			$("#leftmenu").animate({left: '-260px'});
-		}
-		burger++;
+	$("#burgermenu").on('click touch', function (e) {
+		e.stopPropagation();
+		$("#leftmenu").toggleClass("active");
 	});
-	  $(document).on('click touchstart', function(e) {
-    // only if menu is currently open
-    if (burger % 2 !== 0) {
-      // if the click/touch happened outside #leftmenu AND outside the burger icon
-      if (!$(e.target).closest('#leftmenu, #burgermenu').length) {
-        // run the same “close” code
-        $("#burgermenu").attr("src","/media/img/menu-1.png");
-        $("#leftmenu").animate({left: '-260px'});
-        burger++;
-      }
-    }
-  });
+	
+	// Close menu when clicking outside
+	$(document).on('click touchstart', function(e) {
+		// Only close if menu is open and click is outside menu and burger icon
+		if ($("#leftmenu").hasClass("active")) {
+			if (!$(e.target).closest('#leftmenu, #burgermenu').length) {
+				$("#leftmenu").removeClass("active");
+			}
+		}
+	});
+	
+	// Prevent menu from closing when clicking inside it
+	$("#leftmenu").on('click touchstart', function(e) {
+		e.stopPropagation();
+	});
 	// Skripta show more za meni
 		$(".menielement-vec").on('click touch', function () {
 			if($(this).attr( "data-menistatus" )=="zaprt"){

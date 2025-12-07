@@ -10,5 +10,5 @@
 		}
 	?>
 >
-	<?php echo date("Y"); ?> Maša Udovič
+	
 </div>
