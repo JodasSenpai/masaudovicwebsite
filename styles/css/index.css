@@ -199,8 +199,8 @@ body {
 .de {
 	user-select: none;
 	position: relative;
-	width: 180px;
-	height: 180px;
+	width: 240px;
+	height: 240px;
 	border-radius: 100%;
 	box-shadow: 0 0 25px rgba(0, 0, 0, .2);
 	background-color: transparent;
@@ -214,23 +214,23 @@ body {
 
 .den {
 	position: relative;
-	width: 170px;
-	height: 170px;
-	margin: -85px 0 0 -85px;
+	width: 230px;
+	height: 230px;
+	margin: -115px 0 0 -115px;
 	border-radius: 100%;
 	box-shadow: inset 0 3px 10px rgba(0, 0, 0, .6), 0 2px 20px rgba(255, 255, 255, 0.8);
-	background: #888888;
-	background: -moz-radial-gradient(center, ellipse cover, #888888 0%, #333333 100%);
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #888888), color-stop(100%, #333333));
-	background: -webkit-radial-gradient(center, ellipse cover, #888888 0%, #333333 100%);
-	background: -o-radial-gradient(center, ellipse cover, #888888 0%, #333333 100%);
+	background: #667eea;
+	background: -moz-radial-gradient(center, ellipse cover, #667eea 0%, #764ba2 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #667eea), color-stop(100%, #764ba2));
+	background: -webkit-radial-gradient(center, ellipse cover, #667eea 0%, #764ba2 100%);
+	background: -o-radial-gradient(center, ellipse cover, #667eea 0%, #764ba2 100%);
 }
 
 .dene {
 	z-index: 4;
-	width: 110px;
-	height: 110px;
-	margin: -55px 0 0 -55px;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
 	border-radius: 100%;
 	box-shadow: inset 0 2px 2px rgba(255, 255, 255, .4), 0 3px 13px rgba(0, 0, 0, .85);
 	background: #f2f6f5;
@@ -241,9 +241,9 @@ body {
 }
 
 .denem {
-	width: 95px;
-	height: 95px;
-	margin: -47.5px 0 0 -47.5px;
+	width: 130px;
+	height: 130px;
+	margin: -65px 0 0 -65px;
 	border-radius: 100%;
 	background: #cbd5d6;
 	background: -moz-linear-gradient(top, #cbd5d6 0%, #f2f6f5 100%);
@@ -253,9 +253,9 @@ body {
 }
 
 .deneme {
-	width: 80px;
-	height: 80px;
-	margin: -40px 0 0 -40px;
+	width: 110px;
+	height: 110px;
+	margin: -55px 0 0 -55px;
 	border-radius: 100%;
 	box-shadow: inset 0 2px 3px rgba(255, 255, 255, .6), 0 8px 20px rgba(0, 0, 0, .9);
 	background: #eef7f6;
@@ -298,11 +298,22 @@ body {
 }
 
 .den .switch label.safe-number:hover span {
-	transform: scale(1.3) !important;
 	color: #fff;
 	text-shadow: 0 0 15px rgba(102, 126, 234, 1), 0 2px 4px rgba(0, 0, 0, 0.5);
 	transition: all 0.2s ease;
 }
+
+/* Combine scale with existing rotation for each number on hover */
+.den .switch label:nth-child(1):hover span { transform: rotate(90deg) scale(1.2); }
+.den .switch label:nth-child(2):hover span { transform: rotate(54deg) scale(1.2); }
+.den .switch label:nth-child(3):hover span { transform: rotate(18deg) scale(1.2); }
+.den .switch label:nth-child(4):hover span { transform: rotate(-18deg) scale(1.2); }
+.den .switch label:nth-child(5):hover span { transform: rotate(-54deg) scale(1.2); }
+.den .switch label:nth-child(6):hover span { transform: rotate(-90deg) scale(1.2); }
+.den .switch label:nth-child(7):hover span { transform: rotate(-126deg) scale(1.2); }
+.den .switch label:nth-child(8):hover span { transform: rotate(-162deg) scale(1.2); }
+.den .switch label:nth-child(9):hover span { transform: rotate(-198deg) scale(1.2); }
+.den .switch label:nth-child(10):hover span { transform: rotate(-234deg) scale(1.2); }
 
 .den .switch label.safe-number:active span {
 	transform: scale(1.1) !important;
