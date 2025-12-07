@@ -1,0 +1,13 @@
+/* === Animacija === */
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(10px); }
+    5% { opacity: 1; transform: translateY(0); }
+    85% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.menielement-nested{
+    padding: 0px;
+    margin: 0px;
+}

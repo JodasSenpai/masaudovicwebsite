@@ -1,0 +1,13 @@
+/config/config.php
+/.vscode/*
+/.htaccess
+/nongit
+/nongit/*
+/vendor/
+/vendor/*
+/logs/*
+/logs
+error_log
+/controller/*.txt
+/controller/**/*.txt
+/uploads/*
