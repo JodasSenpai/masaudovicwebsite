@@ -95,7 +95,7 @@ function renderMenu($userRole, $menu_items, $role_permissions) {
 ?>
 
 
-<img src="/media/logo-masa.png" id="burgermenu" alt="menu icon">
+<img src="/media/favicon.png" id="burgermenu" alt="menu icon">
 
 <div id="leftmenu">
 <a href='/'><img src="/media/logo-masa.png" alt="Maša Udovič" id="leftmenu-logo"></a>
