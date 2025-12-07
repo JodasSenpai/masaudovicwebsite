@@ -9,7 +9,7 @@
 	<title>Pregled</title>
 	<?php include_once $_SERVER["DOCUMENT_ROOT"].'/view/global/main-header.php'; ?>
 	
-	
+	<?= smart_css('/styles/css/pregled/pregled.css') ?>
 	<?= smart_js('/styles/js/pregled/pregled.js', 'defer') ?> 
 </head>
 <body>

@@ -1,0 +1,22 @@
+/* Center all content in pregled page */
+#mainscreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    text-align: center;
+}
+
+#mainscreen > * {
+    width: 100%;
+    max-width: 800px;
+}
+
+#mainscreen p {
+    margin: 0;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+

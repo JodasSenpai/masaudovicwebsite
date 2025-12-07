@@ -13,35 +13,38 @@
     max-width: 900px;
     height: 100%;
     background-color: #000000;
-    border: 2px solid #00ff00;
+    border: 2px solid #00ff41;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     font-family: 'Courier New', monospace;
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
 }
 
 #terminal-header {
     background-color: #001100;
-    padding: 8px 12px;
-    border-bottom: 1px solid #00ff00;
+    padding: 10px 15px;
+    border-bottom: 1px solid #00ff41;
 }
 
 .terminal-title {
-    color: #00ff00;
+    color: #00ff41;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
 }
 
 #terminal-output {
     flex: 1;
     overflow-y: auto;
-    padding: 15px;
-    color: #00ff00;
-    font-size: 14px;
-    line-height: 1.6;
+    padding: 20px;
+    color: #00ff41;
+    font-size: 16px;
+    line-height: 1.8;
     white-space: pre-wrap;
     word-wrap: break-word;
+    text-shadow: 0 0 3px rgba(0, 255, 65, 0.4);
+    letter-spacing: 0.3px;
 }
 
 #terminal-output::-webkit-scrollbar {
@@ -53,36 +56,40 @@
 }
 
 #terminal-output::-webkit-scrollbar-thumb {
-    background: #00ff00;
+    background: #00ff41;
     border-radius: 5px;
 }
 
 #terminal-output::-webkit-scrollbar-thumb:hover {
-    background: #00cc00;
+    background: #00ff66;
 }
 
 #terminal-input-line {
     display: flex;
     align-items: center;
-    padding: 10px 15px;
+    padding: 12px 15px;
     background-color: #001100;
-    border-top: 1px solid #00ff00;
+    border-top: 1px solid #00ff41;
 }
 
 .prompt {
-    color: #00ff00;
+    color: #00ff41;
     margin-right: 8px;
     font-weight: bold;
+    font-size: 16px;
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
 }
 
 #terminal-input {
     flex: 1;
     background-color: transparent;
     border: none;
-    color: #00ff00;
+    color: #00ff41;
     font-family: 'Courier New', monospace;
-    font-size: 14px;
+    font-size: 16px;
     outline: none;
+    text-shadow: 0 0 3px rgba(0, 255, 65, 0.4);
+    letter-spacing: 0.3px;
 }
 
 #terminal-input::placeholder {
@@ -90,10 +97,10 @@
 }
 
 .terminal-line {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .terminal-line.empty {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
