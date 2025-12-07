@@ -7,7 +7,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Masa Udovic</title>
+	<title>Maša Udovič</title>
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!-- Css  -->
@@ -36,7 +36,7 @@
 
     <!-- Center content -->
     <div class="center-wrap">
-        <img src="/media/logo-masa.png" class="logo" alt="Masa Logo">
+        <img src="/media/logo-masa.png" class="logo" alt="Maša Logo">
 
         <form method="post">
             <input 

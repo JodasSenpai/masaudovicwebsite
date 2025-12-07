@@ -7,7 +7,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Masa Udovic</title>
+	<title>Maša Udovič</title>
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!-- Css  -->
@@ -73,7 +73,7 @@
 		</div>
 		<input type="hidden" id="kodazavstop">
 		<div class="logo-container">
-			<img src="/media/logo-masa.png" alt="Masa Udovic" id="login-logo-bottom"/>
+			<img src="/media/logo-masa.png" alt="Maša Udovič" id="login-logo-bottom"/>
 		</div>
 	</div>
 </body>

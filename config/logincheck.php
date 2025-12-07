@@ -4,8 +4,5 @@ if(!isset($_SESSION['loggedin'])){
     header('Location: /');
     exit('Not logged in');
 }
-else{
-    echo json_encode(['success' => true]);
-}
 
 ?>

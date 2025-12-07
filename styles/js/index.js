@@ -1,13 +1,11 @@
 $(document).ready(function(){
     $.ajax({
-        url: "/config/logincheck.php",
+        url: "/controller/login.php",
+        data: { checklogin: true },
         type: "POST",
         success: function(response){
-            response = JSON.parse(response);
-            
-            if(response.success == false){
-                window.location.href = "/";
-            } else {
+            response = JSON.parse(response);            
+            if(response.success){
                 window.location.href = "/pregled";
             }
         }

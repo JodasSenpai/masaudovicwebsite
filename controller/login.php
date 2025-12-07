@@ -13,3 +13,10 @@ if(isset($_POST['kodazavstop'])){
         echo json_encode(['success' => false]);
     }
 }
+if(isset($_POST['checklogin'])){
+    if(!isset($_SESSION['loggedin'])){
+        echo json_encode(['success' => false]);
+    } else {
+        echo json_encode(['success' => true]);
+    }
+}
