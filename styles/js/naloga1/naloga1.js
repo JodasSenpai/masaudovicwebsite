@@ -373,6 +373,20 @@ function endGame(won) {
     gameState.currentInputType = null;
 }
 
+// Toggle original code visibility
+function toggleOriginalCode() {
+    const codeContent = document.getElementById('original-code-content');
+    const toggleBtn = document.getElementById('toggle-code-btn');
+    
+    if (codeContent.style.display === 'none') {
+        codeContent.style.display = 'block';
+        toggleBtn.textContent = 'Skrij originalno kodo';
+    } else {
+        codeContent.style.display = 'none';
+        toggleBtn.textContent = 'Prikaži originalno kodo';
+    }
+}
+
 // Start game when page loads
 document.addEventListener('DOMContentLoaded', function() {
     initGame();

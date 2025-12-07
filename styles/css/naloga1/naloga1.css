@@ -104,3 +104,25 @@
     margin-bottom: 12px;
 }
 
+/* Original code section - no styling, plain text */
+#original-code-section {
+    margin-top: 30px;
+}
+
+#toggle-code-btn {
+    margin-bottom: 10px;
+}
+
+#original-code-content {
+    margin-top: 10px;
+    text-align: left;
+}
+
+#original-code-content pre {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    white-space: pre;
+    font-family: monospace;
+}
+
